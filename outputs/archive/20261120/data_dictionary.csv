@@ -1,0 +1,7 @@
+﻿field,type,rule
+votes,integer,nonnegative
+vote_share,decimal,votes/valid_votes*100; 2dp
+baseline_at,ISO8601|null,never fabricate; KST offset
+source_rows,array[int],original CSV row numbers
+is_demo,boolean,separate real and synthetic
+review_status,enum,REVIEW_REQUIRED before independent reconciliation

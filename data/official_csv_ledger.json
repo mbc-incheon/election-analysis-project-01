@@ -1,0 +1,15 @@
+{
+  "source_id": "NEC-NA22-CSV",
+  "url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003172714&fileDetailSn=1",
+  "catalog_url": "https://www.data.go.kr/data/15025527/fileData.do",
+  "publisher": "중앙선거관리위원회",
+  "collected_at": "2026-11-20T17:12:48.975889+09:00",
+  "response_status": 200,
+  "file_name": "NEC_NA22_20240410.csv",
+  "sha256": "65632277f979c449038eaba79e21aef9ddd239be71cac4dcfdcd17b97c7de0e1",
+  "bytes": 7588808,
+  "rights": "공공누리 제1유형 출처표시",
+  "election_date": "2024-04-10",
+  "baseline_at": null,
+  "note": "최종 개표결과 파일. 실시간 단계별 시각은 제공하지 않음"
+}

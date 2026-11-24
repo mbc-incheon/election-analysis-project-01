@@ -1,0 +1,507 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=10"/>
+	<title>중앙선거관리위원회 도서관</title>
+	<link rel="stylesheet" type="text/css" href="/neweps/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/neweps/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/neweps/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/neweps/css/bbs.css" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="/neweps/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/neweps/js/common.js"></script>
+	<script type="text/javascript" src="/neweps/js/ui_common.js"></script>
+	<script type="text/javascript" src="/neweps/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="/neweps/js/validator.js"></script>
+	<link rel="stylesheet" href="/neweps/css/jquery-ui.css">
+	<script src="/neweps/js/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.mainSlider').bxSlider({
+			auto : true,
+			controls : false
+		});
+		$("#quickSlider").bxSlider({
+			pager: false,
+			nextSelector: '.quickSliderNext',
+			prevSelector: '.quickSliderPrev',				
+			minSlides: 4,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideWidth: 195
+		});
+		$("#thumbArea").bxSlider({
+			pager: false,
+			nextSelector: '.thumbAreaNext',
+			prevSelector: '.thumbAreaPrev',				
+			minSlides: 4,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideWidth: 160
+		});
+	});
+	function golink(url){
+		var urls = url.options[url.selectedIndex].value;
+		
+		var newWindow = window.open("about:blank");
+
+		newWindow.location.href =urls;
+
+	}
+	</script>
+</head> 
+	<div id="headerWrap">
+		<header>
+			<div class="headerInner">
+				<h1><a href="/neweps/main.do"><img src="/neweps/images/common/h1_logo.png" alt="중앙선거관리위원회 도서관"></a></h1>
+			</div>
+			<ul id="topMenu">
+				<li><a href="/neweps/1/1/majorData.do"><img src="/neweps/images/common/t_01.png" alt="소장자료"></a>
+					<ul id="topMenuSub" class="hide">
+						<li><a href="/neweps/1/1/majorData.do">소장자료</a></li>
+						<li><a href="/neweps/1/2/newDataResult.do?chs=&page=&myScraps=&dataType=bookData&period=m3&keyWord=">신착자료</a></li>
+					</ul>
+				</li>
+				<li><a href="/neweps/2/0/elec.do"><img src="/neweps/images/common/t_02.png" alt="전자정보자료"></a></li>
+				<li><a href="/neweps/3/1/paper.do"><img src="/neweps/images/common/t_03on.png" alt="선거자료"></a>
+					<ul id="topMenuSub" class="hide">
+						<li><a href="/neweps/3/1/paper.do">후보자선전물</a></li>
+						<li><a href="/neweps/3/2/photo.do?order=photo_ymd&amp;order_sort=desc">사진자료</a></li>
+						<li><a href="http://library.nec.go.kr/neweps/3/3/video.do?order_sort=desc&amp;order=reg_ymd">동영상자료</a></li>
+						<li><a href="http://library.nec.go.kr/neweps/3/4/voice.do?order_sort=desc&amp;order=reg_ymd">음성자료</a></li>
+						<li><a href="/neweps/3/5/promote.do?order_sort=desc&amp;order=reg_ymd">홍보자료</a></li>
+					</ul>
+				</li>
+				<li><a href="/neweps/4/1/ebook.do?page=1&amp;fieldName=data_nm&amp;category=tms500tbl_ebook&amp;ebook=" target='_blank'><img src="/neweps/images/common/t_04.png" alt="e-Book"></a></li>
+				<li><a href="/neweps/5/1/noticeList.do"><img src="/neweps/images/common/t_05.png" alt="참여마당"></a>
+					<ul id="topMenuSub" class="hide">
+						<li><a href="/neweps/5/1/noticeList.do">공지사항</a></li>
+					</ul>
+				</li>
+				<li><a href="/neweps/6/1/introLibrary.do"><img src="/neweps/images/common/t_06.png" alt="도서관 소개"></a>
+					<ul id="topMenuSub" class="hide">
+						<li><a href="/neweps/6/1/introLibrary.do">도서관 소개</a></li>
+						<li><a href="/neweps/6/2/introInfo.do">도서관 이용안내</a></li>
+						<li><a href="/neweps/6/3/introLocation.do">찾아오시는 길</a></li>
+					</ul>
+				</li>
+				<li id="allTopMenu"><a href="#a"><img src="/neweps/images/common/t_07.png" alt="전체보기"></a></li>
+			</ul>
+			<div class="topMenuBg">
+				<div class="sub01">
+					<ul>
+						<li><a href="/neweps/1/1/majorData.do">소장자료</a></li>
+						<li><a href="/neweps/1/2/newDataResult.do?chs=&page=&myScraps=&dataType=bookData&period=m3&keyWord=">신착자료</a></li>
+					</ul>
+				</div>
+				<div class="sub02">　</div>
+				<div class="sub03">
+					<ul>
+						<li><a href="/neweps/3/1/paper.do">후보자선전물</a></li>
+						<li><a href="/neweps/3/2/photo.do?order=photo_ymd&amp;order_sort=desc">사진자료</a></li>
+						<li><a href="http://library.nec.go.kr/neweps/3/3/video.do?order_sort=desc&amp;order=reg_ymd">동영상자료</a></li>
+						<li><a href="http://library.nec.go.kr/neweps/3/4/voice.do?order_sort=desc&amp;order=reg_ymd">음성자료</a></li>
+						<li><a href="/neweps/3/5/promote.do?order_sort=desc&amp;order=reg_ymd">홍보자료</a></li>
+					</ul>
+				</div>
+				<div class="sub04">　</div>
+				<div class="sub05">
+					<ul>
+						<li><a href="/neweps/5/1/noticeList.do">공지사항</a></li>
+					</ul>
+				</div>
+				<div class="sub06">
+					<ul>
+						<li><a href="/neweps/6/1/introLibrary.do">도서관 소개</a></li>
+						<li><a href="/neweps/6/2/introInfo.do">도서관 이용안내</a></li>
+						<li><a href="/neweps/6/3/introLocation.do">찾아오시는 길</a></li>
+					</ul>
+				</div>
+				<div class="sub07">　</div>
+			</div>
+		</header>
+	</div>
+</html>	
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />	
+	<script type="text/javascript">
+		function excelDown(chs){
+			
+			var frm = document.forms["search"];
+			frm.chs.value = chs;
+			frm.action = "/neweps/3/1/paperSearch.do";
+			frm.submit(); 
+			
+		}
+		function goSearch( elecType, elecTypeMax, elecDe){
+			$('input[name="elecType"]').val(elecType);
+			$('input[name="elecTypeMax"]').val(elecTypeMax);
+			$('input[name="elecDe"]').val(elecDe);
+
+			$('input[name="turnDe"]').val("");
+			$('input[name="code_id"]').val("");
+			$('input[name="turnType"]').val("");
+			$('input[name="cityType"]').val("");
+			$('input[name="guType"]').val("");
+			$('input[name="sign_id"]').val("");
+			$('input[name="elect_region_nm"]').val("");
+
+			$('input[name="sido_nm"]').val("");
+			
+			submits();
+		}
+		function goSearchTurn(turnType, code_id, turnDe){
+			$('input[name="turnType"]').val(turnType);
+			$('input[name="turnDe"]').val(turnDe);
+			$('input[name="code_id"]').val(code_id);
+			$('input[name="cityType"]').val("");
+			$('input[name="sign_id"]').val("");
+			$('input[name="elect_region_nm"]').val("");
+
+			$('input[name="elecDe"]').val("");
+			$('input[name="sido_nm"]').val("");
+			$('input[name="guType"]').val("");
+			
+			submits();
+		}
+		function goSearchCity(cityType, code_num){
+			$('input[name="cityType"]').val(cityType);
+			$('input[name="sign_id"]').val(code_num);
+			$('input[name="guType"]').val("");
+			$('input[name="elect_region_nm"]').val("");
+
+			$('input[name="sido_nm"]').val("");
+			
+			submits();
+		}
+		function goSearchGu(guType, code_num){
+			$('input[name="guType"]').val(guType);
+			$('input[name="sido_nm"]').val(code_num);
+			$('input[name="elect_region_nm"]').val("");
+			
+			submits();
+		}
+		function goSearchs(code_num){
+			$('input[name="elect_region_nm"]').val(code_num);
+			
+			submits();
+		}
+		function konan(){
+			
+			submits();
+			
+		}
+		
+		function setPage(page)
+		{
+			var frm = document.forms["search"];
+			frm.page.value = page;
+			frm.chs.value = "";
+			frm.action = "/neweps/3/1/paperSearch.do";
+			frm.submit();
+			
+		}
+		function submits(){
+			var frm = document.forms["search"];
+			frm.action = "/neweps/3/1/paperSearch.do";
+			frm.chs.value = "";
+			frm.submit();
+		}
+		function myScrap(){
+			var scrapLength = $("input[name='myScrap']:checkbox:checked").length-1;
+			var html = "";
+			if(scrapLength==-1){
+				alert("선택된 자료가 없습니다");
+			}else{
+				
+				$("input[name='myScrap']:checked").each(function(index) {
+					html += $(this).val();
+					if(index < scrapLength){
+						if(index != scrapLength){
+							html += "/";
+						}
+					}
+				});
+				
+				$('input[name="myScraps"]').val(html);
+				var frm = document.forms["search"];
+				frm.chs.value = "";
+				frm.action = "/neweps/mypageScrapPaper.do";
+				frm.submit();
+	 			
+			}
+			
+		}
+		function goView(ctl_no_id, epdata_id, epType, start_file_sn, end_file_sn, svc_path_nm, epid, candidate_nm, elect_ymd, elect_sn, elecDe, turnDe, sido_nm, elect_region_nm, sign_id, party_nm, win_yn){
+			$('input[name="epType"]').val(epType);
+			$('input[name="ctl_no_id"]').val(ctl_no_id);
+			$('input[name="epdata_id"]').val(epdata_id);
+			$('input[name="start_file_sn"]').val(start_file_sn);
+			$('input[name="end_file_sn"]').val(end_file_sn);
+			$('input[name="svc_path_nm"]').val(svc_path_nm);
+			$('input[name="epid"]').val(epid);
+			$('input[name="candidate_nm"]').val(candidate_nm);
+			$('input[name="elect_ymd"]').val(elect_ymd);
+			$('input[name="elect_sn"]').val(elect_sn);
+			$('input[name="elecDe"]').val(elecDe);
+			$('input[name="turnDe"]').val(turnDe);
+			$('input[name="sido_nm"]').val(sido_nm);
+			$('input[name="elect_region_nm"]').val(elect_region_nm);
+			$('input[name="sign_id"]').val(sign_id);
+			$('input[name="party_nm"]').val(party_nm);
+			$('input[name="win_yn"]').val(win_yn);
+			
+			var frm = document.forms["search"];
+			frm.chs.value = "";
+			frm.action = "/neweps/3/1/paperView.do";
+			frm.submit();
+			
+		}
+		
+		function checkAll(){
+			if( jQuery("[name=check_all]").is(":checked") ){
+			
+				jQuery("[name=myScrap]").prop("checked",true);
+				
+			} else {
+			
+				jQuery("[name=myScrap]").prop("checked",false);
+				
+			}
+		}		
+		function manjocdo_insert(m_menu){
+			if($("[name=m_score]:checked").val() != undefined){
+				var urlStr = "/neweps/manjocdo_insert.do?m_score="+$("[name=m_score]:checked").val()+""+"&m_menu="+m_menu;
+				jQuery.ajax({
+					type:"POST"
+					,url:urlStr
+					,success : function(data)
+					{
+						alert("만족도가 입력 되었습니다.");
+						location.reload();
+					}
+					,error : function(xhr, status, error)
+					{
+						alert("다시 시도해 주세요.");
+					}
+				});
+			}else{
+				alert("만족도를 선택해주세요.");
+			}
+		}
+	</script>
+</head>
+<body>
+<form id="search" name="search" method="get">
+	<input type="hidden" name="chs"/>
+	<input type="hidden" name="page"/>
+	<input type="hidden" name="epType"/>
+	<input type="hidden" name="start_file_sn"/>
+	<input type="hidden" name="end_file_sn"/>
+	<input type="hidden" name="svc_path_nm"/>
+	<input type="hidden" name="epid"/>
+	<input type="hidden" name="candidate_nm"/>
+	<input type="hidden" name="elect_ymd"/>
+	<input type="hidden" name="epdata_id"/>
+	<input type="hidden" name="ctl_no_id"/>
+	<input type="hidden" name="elect_sn"/>
+	<input type="hidden" name="party_nm"/>
+	<input type="hidden" name="win_yn"/>
+	
+	<input type="hidden" name="elecDe" value=""/>
+	<input type="hidden" name="turnDe" value=""/>
+	<input type="hidden" name="elecType" value=""/>
+	<input type="hidden" name="code_id" value=""/>
+	<input type="hidden" name="elecTypeMax" value=""/>
+	<input type="hidden" name="turnType" value=""/>
+	<input type="hidden" name="cityType" value=""/>
+	<input type="hidden" name="guType" value=""/>
+	<input type="hidden" name="sign_id" value=""/>
+	<input type="hidden" name="sido_nm" value=""/>
+	<input type="hidden" name="elect_region_nm" value=""/>
+	<input type="hidden" name="fieldName" value="candidate_nm"/>
+	<input type="hidden" name="category" value="tms120tbl"/>
+	<input type="hidden" name="myScraps"/>
+	<article id="navigation">
+		<div class="naviInner">
+			<span>Home</span> <span>선거자료</span> <span class="b">후보자선전물</span>
+		</div>
+	</article>
+	<section id="wrap">
+		
+
+
+
+
+
+
+<script type="text/javascript">
+</script>
+	
+	
+	
+		<article id="left">
+			<h1>좌측메뉴 영역</h1>
+			<h2><img src="../../images/common/h2_vote.png" alt="선거자료"></h2>
+			<ul id="leftMenu">
+				<li class="on"><a href="/neweps/3/1/paper.do">후보자선전물</a></li>
+				<li ><a href="/neweps/3/2/photo.do?order=photo_ymd&amp;order_sort=desc">사진자료</a></li>
+				<li ><a href="http://library.nec.go.kr/neweps/3/3/video.do?order_sort=desc&amp;order=reg_ymd">동영상자료</a></li>
+				<li ><a href="http://library.nec.go.kr/neweps/3/4/voice.do?order_sort=desc&amp;order=reg_ymd">음성자료</a></li>
+				<li ><a href="/neweps/3/5/promote.do?order_sort=desc&amp;order=reg_ymd">홍보자료</a></li>
+			</ul>
+		</article>
+	
+	
+	
+	
+
+		<article id="contents">
+			<h1>컨텐츠 영역</h1>
+			<div class="head_tit">
+				<h2>후보자선전물</h2>
+				<h3>선거벽보, 선거공보, 소형인쇄물을 검색하실 수 있습니다.</h3>
+			</div>
+			<div id="content">
+				<div class="brownBox type03">
+					<label class="tit">후보자명</label> &nbsp;
+					<input type="text" name="kwd" value="" title="후보자명 입력란" class="type2" style="width:60%"> &nbsp;
+					<input type="image" onclick="konan();" src="../../images/btn/btn_search.png" alt="검색">
+				</div>
+				<div class="brownBox type02 mt05 al radioSelect">
+					<label ><input type="radio" name="elecTypes" value="10"  onChange="javascript:goSearch('10', '20', '대통령선거');"> 대통령선거</label>
+					<label ><input type="radio" name="elecTypes" value="20"  onChange="javascript:goSearch('20', '30', '국회의원선거');"> 국회의원선거</label>
+					<label ><input type="radio" name="elecTypes" value="30"  onChange="javascript:goSearch('30', '50', '지방선거');"> 지방선거</label>
+					<label ><input type="radio" name="elecTypes" value="60"  onChange="javascript:goSearch('60', '70', '교육감 · 교육위원선거');"> 교육감 · 교육위원선거</label>
+					<label ><input type="radio" name="elecTypes" value="70"  onChange="javascript:goSearch('70', '90', '위탁선거');"> 위탁선거</label>
+					<label ><input type="radio" name="elecTypes" value="50"  onChange="javascript:goSearch('50', '60', '기타선거');"> 기타선거</label>
+					<label ><input type="radio" name="elecTypes" value="00"  onChange="javascript:goSearch('00', '00', '국민투표');"> 국민투표</label>
+				</div>
+				
+				
+					
+					
+				
+				<div class="guideTxtBox">
+						<!--
+						※ 중앙선거관리위원회 도서관은 “정당 또는 후보자(후보자가 되려는 자를 포함한다. 이하 이 조에서 같다)가 선거관리위원회에 제출한 <br/>&nbsp;&nbsp;벽보 · 공보 · 소형인쇄물 등 각종 인쇄물, 광고, 사진, 그 밖의 선전물을 공익을 목적으로 출판 · 전시하거나 인터넷홈페이지 게시, 그 밖의 <br/>&nbsp;&nbsp;방법으로 활용할 수 있다”는 공직선거법 제279조에 따라 운영하고 있습니다.
+						<br/><strong>※ 후보자선전물의 저작권과 초상권은 정당 또는 후보자에게 있음을 알려드리오니 반드시 자료 활용 시 저작권·초상권자의 <br/>&nbsp;&nbsp;허락을 받으신 후 사용하기 바랍니다.</strong>
+						-->
+						
+						<table style="width:100%;table-layout:fixed;">
+							<tr>
+								<td style="width:20px;vertical-align:top !important;">※</td>
+								<td>중앙선거관리위원회 도서관은 “정당 또는 후보자(후보자가 되려는 자를 포함한다. 이하 이 조에서 같다)가 선거관리위원회에 제출한 벽보·공보·소형인쇄물 등 각종 인쇄물, 광고, 사진, 그 밖의 선전물을 공익을 목적으로 출판·전시하거나 인터넷홈페이지 게시, 그 밖의 방법으로 활용할 수 있다”는 공직선거법 제279조에 따라 운영하고 있습니다.</td>
+							</tr>
+							<tr>
+								<td style="width:20px;vertical-align:top !important;"><strong>※</strong></td>
+								<td><strong>후보자선전물의 저작권과 초상권은 정당 또는 후보자에게 있음을 알려드리오니 반드시 자료 활용 시 저작권·초상권자의 허락을 받으신 후 사용하기 바랍니다.</strong></td>
+							</tr>
+							<tr>
+								<td style="width:20px;vertical-align:top !important;"><strong>※</strong></td>
+								<td><strong>후보자선전물은 수집된 경우에 한하여 제공됩니다.(무투표당선 등의 경우에는 제공되지 않을 수 있습니다.)</strong></td>
+							</tr>
+						</table>
+													
+							
+						</div>
+						<div style="position:relative;margin-top:10px;background:#f2f2f2;border:1px solid #dbdce0;padding:20px;outline-style:none;">
+							<p style="display:inline-block;float:left;padding:10px 10px 0 0;font-weight:font-weight;margin:0 !important;">콘텐츠 만족도</p>
+							<div style="background:#fff;padding:5px 12px 0 12px;font-size:0.95em;overflow:hidden;outline-style:none;">
+								<span style="margin:2px 0;position:relative;display:inline-block;outline-style:none;"><input type="radio" style="position:absolute;left:0;top:3px;height:20px;width:20px;box-sizing:border-box;padding:0;vertical-align:middle;outline-style:none;" name="m_score" value="매우만족" id="m_score1" checked><label for="m_score1" style="vertical-align:top;margin-right:2.5em;position:relative;display:inline-block;z-index:100;color:#333;font-weight:normal;cursor:pointer;outline-style:none;max-width:100%;margin-bottom:5px;"><span style="display:inline-block;padding:3px 0 0 27px;outline-style:none;font-weight:bold;">매우만족</span></label></span>
+								<span style="margin:2px 0;position:relative;display:inline-block;outline-style:none;"><input type="radio" style="position:absolute;left:0;top:3px;height:20px;width:20px;box-sizing:border-box;padding:0;vertical-align:middle;outline-style:none;" name="m_score" value="만족" id="m_score2"><label for="m_score2" style="vertical-align:top;margin-right:2.5em;position:relative;display:inline-block;z-index:100;color:#333;font-weight:normal;cursor:pointer;outline-style:none;max-width:100%;margin-bottom:5px;"><span style="display:inline-block;padding:3px 0 0 27px;outline-style:none;font-weight:bold;">만족</span></label></span>
+								<span style="margin:2px 0;position:relative;display:inline-block;outline-style:none;"><input type="radio" style="position:absolute;left:0;top:3px;height:20px;width:20px;box-sizing:border-box;padding:0;vertical-align:middle;outline-style:none;" name="m_score" value="보통" id="m_score3"><label for="m_score3" style="vertical-align:top;margin-right:2.5em;position:relative;display:inline-block;z-index:100;color:#333;font-weight:normal;cursor:pointer;outline-style:none;max-width:100%;margin-bottom:5px;"><span style="display:inline-block;padding:3px 0 0 27px;outline-style:none;font-weight:bold;">보통</span></label></span>
+								<span style="margin:2px 0;position:relative;display:inline-block;outline-style:none;"><input type="radio" style="position:absolute;left:0;top:3px;height:20px;width:20px;box-sizing:border-box;padding:0;vertical-align:middle;outline-style:none;" name="m_score" value="불만족" id="m_score4"><label for="m_score4" style="vertical-align:top;margin-right:2.5em;position:relative;display:inline-block;z-index:100;color:#333;font-weight:normal;cursor:pointer;outline-style:none;max-width:100%;margin-bottom:5px;"><span style="display:inline-block;padding:3px 0 0 27px;outline-style:none;font-weight:bold;">불만족</span></label></span>
+								<span style="margin:2px 0;position:relative;display:inline-block;outline-style:none;"><input type="radio" style="position:absolute;left:0;top:3px;height:20px;width:20px;box-sizing:border-box;padding:0;vertical-align:middle;outline-style:none;" name="m_score" value="매우 불만족" id="m_score5"><label for="m_score5" style="vertical-align:top;margin-right:2.5em;position:relative;display:inline-block;z-index:100;color:#333;font-weight:normal;cursor:pointer;outline-style:none;max-width:100%;margin-bottom:5px;"><span style="display:inline-block;padding:3px 0 0 27px;outline-style:none;font-weight:bold;">매우 불만족</span></label></span>					
+							</div>
+							<a href="#" onclick="manjocdo_insert('후보자선전물');" style="float:right;position:absolute;top:20px;right:20px;padding:9px 12px;font-size:0.95em;border-radius:0;background:#474a5b;border:#474a5b;color:#fff !important;display:inline-block;margin-bottom:0;font-weight:normal;text-align:center;vertical-align:middle;touch-action:manipulation;cursor:pointer;white-space:nowrap;line-height:1.42857143;user-select:none;">평가하기</a>
+						</div>
+			</div>
+		</article>
+	</section>
+	
+
+
+
+
+
+
+
+<!-- Footer -->
+<div class="mainQuickWrap">
+  <article class="mainQuick">
+    <div class="fl"><img src="/neweps/images/main/txt_quick.png" alt="유관기관 바로가기"></div>
+    <div class="fl quickSliderPrev"></div>
+    <div class="fl quickSliderWrap">
+      <ul id="quickSlider">
+        <li><a href="http://nec.go.kr/portal/main.do" target="_blank"><img src="/neweps/images/main/quick_01.png" alt="중앙선거관리위원회"></a></li>
+        <li><a href="http://museum.nec.go.kr/museum2018/main/main.do" target="_blank"><img src="/neweps/images/main/quick_09.png" alt="사이버선거역사관"></a></li>
+        <li><a href="http://www.iendc.go.kr/" target="_blank"><img src="/neweps/images/main/quick_02.png" alt="중앙선거관리위원회 인터넷선거보도심의위원회"></a></li>
+        <li><a href="http://info.nec.go.kr" target="_blank"><img src="/neweps/images/main/quick_03.png" alt="중앙선거관리위원회 선거통계시스템"></a></li>
+        <li><a href="http://www.debates.go.kr/" target="_blank"><img src="/neweps/images/main/quick_04.png" alt="중앙선거방송토론위원회"></a></li>
+        <li><a href="http://open.nec.go.kr/" target="_blank"><img src="/neweps/images/main/quick_05.png" alt="중앙선거관리위원회선고통계시스템"></a></li>
+        <li><a href="http://www.civicedu.go.kr/" target="_blank"><img src="/neweps/images/main/quick_06.png" alt="중앙선거관리위원회선고통계시스템"></a></li>
+        
+        <li><a href="http://policy.nec.go.kr/" target="_blank"><img src="/neweps/images/main/quick_10.png" alt="정책/공약마당"></a></li>
+      </ul>
+    </div>
+    <div class="fl quickSliderNext"></div>
+    <div class="cb"></div>
+  </article>
+</div>
+<footer>
+  <div class="footerInner">
+    <ul class="fMenu">
+      <li><a href="/neweps/10/1/sitePerson.do"><img src="/neweps/images/main/f_01.png" alt="개인정보처리방침"></a></li>
+      <li><a href="/neweps/10/2/siteCopyright.do"><img src="/neweps/images/main/f_02.png" alt="저작권정책"></a></li>
+      <li><a href="/neweps/10/3/siteSitemap.do"><img src="/neweps/images/main/f_03.png" alt="사이트맵"></a></li>
+    </ul>
+    <select title="관련사이트 바로가기" onChange="javascript:golink(this);" style="width: 200px;">
+      <option value="">=====국내=====</option>
+      <option value="https://law.go.kr/main.html">국가법령정보센터</option>
+      <option value="https://assembly.go.kr/portal/main/main.do#anchor7">대한민국 국회</option>
+      <option value="http://www.klri.re.kr">한국법제연구원</option>
+      <option value="http://www.nanet.go.kr">국회도서관</option>
+      <option value="http://library.ccourt.go.kr">헌법재판소도서관</option>
+      <option value="http://library.scourt.go.kr">법원도서관</option>
+
+
+      <option value="https://www.nl.go.kr/">국립중앙도서관</option>
+      <option value="https://world.moleg.go.kr/web/main/index.do">세계법제정보센터</option>
+      <option value="">=====국외=====</option>
+      <option value="https://www.eac.gov/">미국 USEAC</option>
+      <option value="http://www.fec.gov">미국 FEC</option>
+      <option value="http://www.elections.ca/home.asp">캐나다 Elections Canada</option>
+      <option value="https://www.bundeswahlleiter.de/bundeswahlleiter.html">독일 Der Bundeswashlleiter</option>
+      <option value="http://www.electoralcommission.org.uk">영국 The Electoral Commission</option>
+      <option value="https://www.soumu.go.jp/senkyo/senkyo_s/">일본 總務省</option>
+      <option value="http://www.e-gov.go.jp">일본 電子政府 綜合窓口</option>
+    </select>
+    <p class="copyright">
+      <img src="/neweps/images/main/copyright.png" alt="우)13809 경기도 과천시 홍촌말로 44 중앙선거관리위원회 대표전화 02)503-1114 선거법 질의 신고 제보 (국번없이) 1390 COPYRIGHT ? NATIONAL ELECTION COMMISION ALL RIGHT RESERVED">
+    </p>
+  </div>
+</footer>
+
+</form>
+</body>
+</html>

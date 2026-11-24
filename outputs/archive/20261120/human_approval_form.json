@@ -1,0 +1,14 @@
+{
+  "topic": "표심 다음의 질문, 인천의 공약을 읽다",
+  "election": "2024 제22대 총선 인천 지역구",
+  "status": "PENDING_HUMAN_REVIEW",
+  "reviewer": null,
+  "approved_at": null,
+  "reason": null,
+  "checks": [
+    "중립성",
+    "공식 집계 독립 대조",
+    "실제 공약 원문 대조",
+    "기사와 영상 동일 버전"
+  ]
+}

@@ -4,7 +4,43 @@
 
 2024년 제22대 국회의원선거 인천 지역구를 대상으로 공식 개표 데이터와 공약 근거를 연결하고, 기사 초안 → 팩트체크 → 독립 편집 승인 → 뉴스 제작으로 이어지는 선거보도 시스템입니다.
 
-이 저장소는 프로젝트의 **기획·설계 산출물 7종**을 정리합니다. 실행 소스와 실행 방법은 [Real-time-Election-News](https://github.com/mbc-incheon/Real-time-Election-News)에서 확인할 수 있습니다. 아래 문서는 2026년 11월 23일 로컬 구현과 사용자 확정 범위를 기준으로 작성했습니다.
+이 저장소는 **기획·설계 문서 7종, 실제 실행 소스코드, DB SQL 스크립트와 검증·형상관리 기록**을 함께 제공합니다. 2026년 11월 24일에 기존 [Real-time-Election-News](https://github.com/mbc-incheon/Real-time-Election-News)의 로컬 후속 수정본을 통합했습니다. 기존 작업 폴더의 미커밋 수정은 보존했습니다.
+
+## 구현 결과물과 실행
+
+| 산출물 | 위치 | 제공 내용 |
+| --- | --- | --- |
+| 데이터 송신 서버 | [election-data-server](election-data-server) | 공식 입력 검사·원본/원장·이벤트 이력·WebSocket 송신 |
+| 보도 서버와 화면 | [election-news-server](election-news-server) | 대시보드·근거 검색·초안·검증·독립 승인·JSON 내보내기 |
+| DB 스크립트 | [db](db/README.md) | CREATE TABLE·INSERT·무결성/조회 SQL·초기화 도구 |
+| 검증 결과 | [구현 결과서](docs/implementation-results.md) | 단위/DB 26개·통합 13개·화면 제어 로직 5개 통과 |
+| 형상관리와 협업 | [실제 기록과 협업 절차](docs/collaboration.md) | 커밋 이력·출처·PR 양식·자동 시험 설정 |
+| 기존 발표와 영상 | [2026-11-20 자료 보관함](outputs/archive/20261120) | PPT·20분 검토 영상·대본·자막·기존 보고서 |
+
+Python 3.12 이상에서 저장소 루트에서 실행합니다.
+
+```powershell
+python -m venv .venv
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+./start.ps1
+```
+
+브라우저에서 **http://127.0.0.1:8102**를 엽니다. 첫 실행에 표시되는 writer/editor 토큰은 서로 다른 담당자가 사용합니다. 토큰 원문은 파일로 저장하지 않고 화면 메모리에서만 사용합니다. 종료는 실행 터미널에서 `Ctrl+C`입니다. 기본 실행은 시뮬레이션이며 실제 선거 속보가 아닙니다.
+
+데이터 서버는 8101, 보도 서버는 8102입니다. API 상세는 각 서버의 `/docs` 및 [OpenAPI JSON](outputs/openapi_news.json)에서 확인합니다. 외부 생성형 AI와 몰입형 VR 기기 연동은 현재 없습니다.
+
+```powershell
+# 별도 DB에 CREATE TABLE과 INSERT 예제 적용
+.venv/Scripts/python.exe scripts/init_db.py --path runtime/sql-demo/news.sqlite --demo
+
+# 검증 재현
+.venv/Scripts/python.exe -m pytest tests -q
+.venv/Scripts/python.exe scripts/integration_test.py
+# Node.js가 있으면 화면 승인 제어 로직도 확인
+node scripts/check_ui.mjs
+```
+
+SQL 예제의 기사는 **DRAFT**, 승인 테이블은 **0건**입니다. 실제 담당자의 편집 승인을 만들지 않습니다. 정상 흐름은 자료 수신 → 검색 → 초안 → 규칙 검증 → 다른 editor의 원문 확인·사유 입력 → 승인본 내보내기입니다. 오류 기사·자기 승인·미확인 근거는 서버에서 차단합니다.
 
 ## 프로젝트 개요
 
@@ -27,7 +63,7 @@
 | 기획 | [01 기획서](docs/deliverables/01_기획서.docx) | 목적·배경·목표·기능 정의·중립성·**팩트체크 20개 항목** | 7쪽 |
 | 기획 | [02 요구사항 정의서](docs/deliverables/02_요구사항_정의서.docx) | 사용자 요구 7개·기능 요구 18개·비기능 요구·인수 시험 | 6쪽 |
 | 기획 | [03 WBS](docs/deliverables/03_WBS_역할분담과_일정관리.docx) | 6개 역할·18개 작업·선행 관계·일정표·완료 기준 | 6쪽 |
-| 설계 | [04 화면 설계서](docs/deliverables/04_화면_설계서.docx) | UI/UX 화면 구성·메뉴 구조·화면별 동작·오류 처리 | 4쪽 |
+| 설계 | [04 화면 설계서](docs/deliverables/04_화면_설계서.docx) | UI/UX 화면 구성·메뉴 구조·화면별 동작·오류 처리·디자인 초안 이미지 | 5쪽 |
 | 설계 | [05 ERD 및 데이터베이스 설계서](docs/deliverables/05_ERD_데이터베이스_설계서.docx) | ERD·테이블 5개·컬럼·자료형·키·JSON 참조·무결성 | 4쪽 |
 | 설계 | [06 API 명세서](docs/deliverables/06_API_명세서.docx) | 프론트엔드 ↔ 백엔드 요청·응답·권한·오류·WebSocket | 5쪽 |
 | 설계 | [07 시스템 아키텍처 설계서](docs/deliverables/07_시스템_아키텍처_설계서.docx) | 전체 서비스 구성도·데이터 흐름·장애 대응·승인 통제 | 4쪽 |
@@ -39,6 +75,8 @@ WBS의 56시간은 작업 배분 계획이며 팀원별 실제 투입 시간은 
 공통 상태 → 지역별 개표 현황 → 공약 근거 검색 → 기사 작성 → 검증과 승인 → 공식 자료실 → 뉴스 제작 안내 순서로 구성합니다. 현재 기본 화면은 하나의 웹 페이지 안에 기능 구역을 배치한 구조입니다.
 
 ![VR 선거보도 시스템 화면 배치도](docs/images/ui_wireframe.png)
+
+화면설계서에 포함한 [디자인 초안](docs/images/VR_선거보도_시스템_화면디자인_초안_v1.png)과 [주요 화면 구성 이미지 초안](docs/images/VR_선거보도_시스템_주요화면구성_이미지초안_v1.png)도 확인할 수 있습니다. 이미지는 디자인 자료이며 실행 화면의 캡처가 아닙니다.
 
 ## 데이터베이스 구조
 
@@ -97,6 +135,15 @@ docs/
 ├── project-plan.md     # 초기 기획 참고 자료
 ├── functional-spec.md  # 초기 기능 참고 자료
 └── system-design.md    # 초기 설계 참고 자료
+
+election-data-server/   # 데이터 송신 실제 소스
+election-news-server/   # 보도 API·SQLite·브라우저 화면
+db/                    # CREATE·INSERT·검수 SQL
+scripts/               # 실행 보조·DB 초기화·통합 시험
+tests/                 # 단위·SQL 시험
+data/                  # 공식 원본·수집 원장·정제본
+outputs/               # 최신 시험 결과와 기존 자료 보관함
+.github/               # 자동 시험과 PR 양식
 ```
 
 기존 [초기 기획서](docs/project-plan.md), [초기 기능정의서](docs/functional-spec.md), [초기 설계서](docs/system-design.md)는 초기에 검토한 참고 자료입니다. 현재 확정된 선거 범위와 시스템 구조는 위 **최신 산출물 7종**을 기준으로 확인합니다.

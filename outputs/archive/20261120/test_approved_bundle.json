@@ -1,0 +1,89 @@
+{
+  "article": {
+    "ai_review": {
+      "model": null,
+      "verdict": "UNAVAILABLE"
+    },
+    "approval_reason": "TEST 자동시험 전용 원문 일치 확인. 실제 사람 승인이 아님.",
+    "approved_at": "2026-11-20T17:11:57.906445+09:00",
+    "approved_by": "TEST-editor",
+    "author": "TEST-writer",
+    "created_at": "2026-11-20T17:11:57.471144+09:00",
+    "id": "d590308fae3b8ca8",
+    "mode": "demo",
+    "region_name": "계양구을",
+    "revision": 1,
+    "sentences": [
+      {
+        "kind": "result",
+        "row_ids": [
+          "DEMO-7-0-0"
+        ],
+        "text": "계양구을 2024-04-10T22:00:00+09:00 기준 가상후보 A의 득표수는 28,530표, 득표율은 51.97%다.",
+        "values": {
+          "baseline_at": "2024-04-10T22:00:00+09:00",
+          "candidate_id": "DEMO-0-0",
+          "candidate_name": "가상후보 A",
+          "count_rate": 90,
+          "region_name": "계양구을",
+          "vote_share": 51.97,
+          "votes": 28530
+        }
+      },
+      {
+        "candidate_id": "DEMO-0-0",
+        "evidence_hashes": [
+          "d3139f500c7ffce79bd742a7a36b2466f829fb0270a0330f1cca7714968993dd"
+        ],
+        "evidence_ids": [
+          "91015331ce94c46d05c3-p1"
+        ],
+        "kind": "pledge",
+        "region_name": "계양구을",
+        "text": "가상후보 A의 공약 자료에는 다음 내용이 제시돼 있다: 교통 분야에서 환승 편의를 개선하겠다는 교육용 가상 공약이다. 추진 일정과 재원은 명시하지 않았다."
+      },
+      {
+        "kind": "result",
+        "row_ids": [
+          "DEMO-7-0-1"
+        ],
+        "text": "계양구을 2024-04-10T22:00:00+09:00 기준 가상후보 B의 득표수는 26,370표, 득표율은 48.03%다.",
+        "values": {
+          "baseline_at": "2024-04-10T22:00:00+09:00",
+          "candidate_id": "DEMO-0-1",
+          "candidate_name": "가상후보 B",
+          "count_rate": 90,
+          "region_name": "계양구을",
+          "vote_share": 48.03,
+          "votes": 26370
+        }
+      },
+      {
+        "candidate_id": "DEMO-0-1",
+        "evidence_hashes": [
+          "ca11b5eca007f3d0019d9ba9e8a8ac8dc1406a73ff66304e374dd906817d11a1"
+        ],
+        "evidence_ids": [
+          "f3b439a193dea30a5717-p1"
+        ],
+        "kind": "pledge",
+        "region_name": "계양구을",
+        "text": "가상후보 B의 공약 자료에는 다음 내용이 제시돼 있다: 주거 분야에서 공공임대 상담을 확대하겠다는 교육용 가상 공약이다. 추진 일정과 재원은 명시하지 않았다."
+      }
+    ],
+    "snapshot_id": "f369e71811e1107ff31a750cd5378171333fd02439ae73a77809edb621262a6a",
+    "status": "APPROVED",
+    "title": "계양구을 개표와 공약 확인",
+    "validation": {
+      "ai": "UNAVAILABLE",
+      "at": "2026-11-20T17:11:57.898087+09:00",
+      "disagreement": false,
+      "errors": [],
+      "rule": "PASS"
+    }
+  },
+  "script": "계양구을 2024-04-10T22:00:00+09:00 기준 가상후보 A의 득표수는 28,530표, 득표율은 51.97%다.\n가상후보 A의 공약 자료에는 다음 내용이 제시돼 있다: 교통 분야에서 환승 편의를 개선하겠다는 교육용 가상 공약이다. 추진 일정과 재원은 명시하지 않았다.\n계양구을 2024-04-10T22:00:00+09:00 기준 가상후보 B의 득표수는 26,370표, 득표율은 48.03%다.\n가상후보 B의 공약 자료에는 다음 내용이 제시돼 있다: 주거 분야에서 공공임대 상담을 확대하겠다는 교육용 가상 공약이다. 추진 일정과 재원은 명시하지 않았다.",
+  "disclosure": "교육용 데모 데이터",
+  "ai_disclosure": "규칙 기반 초안 생성. 생성형 AI 미연결. 사람 검토 후 승인.",
+  "snapshot_id": "f369e71811e1107ff31a750cd5378171333fd02439ae73a77809edb621262a6a"
+}

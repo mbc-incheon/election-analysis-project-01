@@ -1,0 +1,341 @@
+{
+  "project": "표심 다음의 질문 인천의 공약을 읽다",
+  "election": "2024년 제22대 총선 인천 지역구",
+  "delivery": "EDUCATIONAL_REVIEW",
+  "human_approval": "PENDING",
+  "official_pledge_bodies": "NOT_COLLECTED",
+  "github_publication": "PREPARED_FOR_THIS_REPOSITORY",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 304,
+      "sha256": "5e1343e3d1d6e69dfdc53e42d68654b9b17a7d53bd5d5c9f5f779135c898805e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 4793,
+      "sha256": "124eaad9668ef795c760f03d6ddcdf564411b1f1cd40997d321eec0edf469ab2"
+    },
+    {
+      "path": "data/clean/incheon_final_results.csv",
+      "bytes": 10896,
+      "sha256": "5fcc925be6b6841368aa7d5c77040cacab61db05e249d7d367993e1353f3c8cb"
+    },
+    {
+      "path": "data/clean/incheon_final_results.json",
+      "bytes": 65560,
+      "sha256": "2a43ded406c6b61600842fab34f21762a8ac9ce2719d6eed2fe8a73991602eb7"
+    },
+    {
+      "path": "data/clean/incheon_polling_rows.csv",
+      "bytes": 575253,
+      "sha256": "f2a7309d0124f8a18179a571e9c897f39146ac07a84fd05ed36c0356fb9e4419"
+    },
+    {
+      "path": "data/clean/normalization_log.json",
+      "bytes": 4961,
+      "sha256": "61129d490f19f57ea8aca382a51ca03b3b680da8cf36b9b04863cdab08fd6df9"
+    },
+    {
+      "path": "data/official_csv_ledger.json",
+      "bytes": 687,
+      "sha256": "94b511d90147c13bd991820e8ab055501358c083fb8cce6b8f3b47181e23ffc1"
+    },
+    {
+      "path": "data/official_raw/NANET-IC-CAMPAIGN_f29a082fff16a27b.html",
+      "bytes": 245594,
+      "sha256": "f29a082fff16a27b90128805ead99971595b116e6ccc350362d7f0889246cafc"
+    },
+    {
+      "path": "data/official_raw/NEC-CAMPAIGN-LIBRARY_9abe2bdd08882473.html",
+      "bytes": 24049,
+      "sha256": "9abe2bdd08882473c663cc4510ae9f89739328d11d735598f27571aaa77f61ae"
+    },
+    {
+      "path": "data/official_raw/NEC-RESULT-CATALOG_4df35d016e9886ed.html",
+      "bytes": 211616,
+      "sha256": "4df35d016e9886ed898d40be7e256feca48e6dd94e17e27640a4aff1e01ef921"
+    },
+    {
+      "path": "data/official_raw/NEC_NA22_20240410.csv",
+      "bytes": 7588808,
+      "sha256": "65632277f979c449038eaba79e21aef9ddd239be71cac4dcfdcd17b97c7de0e1"
+    },
+    {
+      "path": "data/source_ledger_20261120_170014.json",
+      "bytes": 2788,
+      "sha256": "db7287b63eafd41ea93b106d03fab3e3e1220b676aa726158c69a01b48f4d17b"
+    },
+    {
+      "path": "election-data-server/.env.example",
+      "bytes": 138,
+      "sha256": "73ea208a3fb7130eb3cf903bf034df51b8065aad5f5a34117da2c41090f7285f"
+    },
+    {
+      "path": "election-data-server/.gitignore",
+      "bytes": 62,
+      "sha256": "acc3a84a66dc9584cfbcb9de19b21c10a3e540ff8e91223ce17aa29e3cc1830f"
+    },
+    {
+      "path": "election-data-server/app.py",
+      "bytes": 6381,
+      "sha256": "0622a1011cfcba7a897fe335b5bea746b8284c9a0db03598f1595d4c37b7c03e"
+    },
+    {
+      "path": "election-data-server/README.md",
+      "bytes": 1075,
+      "sha256": "985a5b835fbe3248c71689e09f70fa8e80f6c2d44468b35f7614df8e182797da"
+    },
+    {
+      "path": "election-data-server/requirements.txt",
+      "bytes": 33,
+      "sha256": "87478f3fc193b07a0fab5e849abc3f40e026a4d5ed45838547bce50e88896d94"
+    },
+    {
+      "path": "election-news-server/.env.example",
+      "bytes": 176,
+      "sha256": "7c8ec596258bbe6414d223f954784a277506a72a31fc9927dba0b937069e6f95"
+    },
+    {
+      "path": "election-news-server/.gitignore",
+      "bytes": 62,
+      "sha256": "acc3a84a66dc9584cfbcb9de19b21c10a3e540ff8e91223ce17aa29e3cc1830f"
+    },
+    {
+      "path": "election-news-server/app.py",
+      "bytes": 7666,
+      "sha256": "a6ebe7e382129fde129cdc414c1f3deee4f1cc6775a0432af7d1564d304de929"
+    },
+    {
+      "path": "election-news-server/core.py",
+      "bytes": 11723,
+      "sha256": "67bab285512b9d05856ae9ae6d777b9be4ee59ed4bc35d479c171f6eb981312c"
+    },
+    {
+      "path": "election-news-server/fixtures/fallback_snapshot.json",
+      "bytes": 3907,
+      "sha256": "ea33bdc772d11671af9b726606ee34a53bc2f07f917084f9fffeeae5db0097e8"
+    },
+    {
+      "path": "election-news-server/index.html",
+      "bytes": 10617,
+      "sha256": "95717bc04588f6b0f654ad1d8bda8e04ece110266fc0a426d151a163aa78ab55"
+    },
+    {
+      "path": "election-news-server/init_users.py",
+      "bytes": 840,
+      "sha256": "76d085c0fce13839c82b004b8c2f142fd935842fd2998c98386abb85b912b480"
+    },
+    {
+      "path": "election-news-server/README.md",
+      "bytes": 1580,
+      "sha256": "46f7ab08209fa16847ae908fbb1b620500ac4648686930d25389d80a41454171"
+    },
+    {
+      "path": "election-news-server/reference_data/incheon_final_results.json",
+      "bytes": 65560,
+      "sha256": "2a43ded406c6b61600842fab34f21762a8ac9ce2719d6eed2fe8a73991602eb7"
+    },
+    {
+      "path": "election-news-server/requirements.txt",
+      "bytes": 64,
+      "sha256": "6813ede72ce91796508677d174a0cbbf2b9a03fe1c2e19f3a0fac1f0c28bc8ea"
+    },
+    {
+      "path": "election-news-server/schema.sql",
+      "bytes": 937,
+      "sha256": "6a0705ea25fba33d181411d82a5da89976d8cef57efcb9f9549913a212d58153"
+    },
+    {
+      "path": "fixtures/fallback_snapshot.json",
+      "bytes": 3907,
+      "sha256": "ea33bdc772d11671af9b726606ee34a53bc2f07f917084f9fffeeae5db0097e8"
+    },
+    {
+      "path": "outputs/authoring_runtime_versions.json",
+      "bytes": 28,
+      "sha256": "852502549147a1d0f0a1f3776bc4326746b79bba9fba0f6d46f7fca513f6d159"
+    },
+    {
+      "path": "outputs/dashboard.jpg",
+      "bytes": 192286,
+      "sha256": "94e058f4e600757a09f27f1bff21693e467d9c88f28a95ac8f675bb7372d4c0f"
+    },
+    {
+      "path": "outputs/dashboard_preview.png",
+      "bytes": 215977,
+      "sha256": "5c5a6a2690c18bd78ed3f9f4969e15fea5210b51ec71c43a7bf22cb516f638c7"
+    },
+    {
+      "path": "outputs/data_dictionary.csv",
+      "bytes": 312,
+      "sha256": "cdb5357736ce440770089a02a6f165efe0e89050af0e8d398a8d1d91fa710dd5"
+    },
+    {
+      "path": "outputs/execution_runtime_versions.json",
+      "bytes": 172,
+      "sha256": "298a55dce53bf904ce82fc929f6d5c79fe684e3e432baa515736ca8e6681e5d3"
+    },
+    {
+      "path": "outputs/human_approval_form.json",
+      "bytes": 376,
+      "sha256": "a3a23cdea39979f7d3300b36e9f7156d883efbbfa6e7bc9efd6b5592154ec6ec"
+    },
+    {
+      "path": "outputs/incheon_pledge_news.pptx",
+      "bytes": 213087,
+      "sha256": "9de1594a6a581d05283467bcb445931d2fbc051ecdf5211c3d9e786e13c4d999"
+    },
+    {
+      "path": "outputs/integration_results.json",
+      "bytes": 1427,
+      "sha256": "d00011812f7d4a33285d20c7af96ddb266811171dd523641288d9fd187ee0c0f"
+    },
+    {
+      "path": "outputs/news_review_20min.mp4",
+      "bytes": 30755624,
+      "sha256": "4a63ed808b1a15e8e5ef881157522649314552c3f8bd0c62b714cccab6ee9219"
+    },
+    {
+      "path": "outputs/news_script.json",
+      "bytes": 30081,
+      "sha256": "7f5879fb6e68d6404666a79db9024cd0ba7fa73a1a0ca23d031719a405649b59"
+    },
+    {
+      "path": "outputs/news_subtitles.srt",
+      "bytes": 28713,
+      "sha256": "ddb1f79daa997e91c68a26d622008b485998c433293844165dc09d44ddcff80e"
+    },
+    {
+      "path": "outputs/openapi_data.json",
+      "bytes": 4436,
+      "sha256": "ab5844087709c7e8d3722fa3ebccaa9080321c7eaf9f2d0b2262cb77ab2ea99e"
+    },
+    {
+      "path": "outputs/openapi_news.json",
+      "bytes": 18235,
+      "sha256": "166dfc75fa8204194ed42ae7e7cf926e4a1b9707b530a30d1374a253645c0e76"
+    },
+    {
+      "path": "outputs/test_approved_bundle.json",
+      "bytes": 3957,
+      "sha256": "23fbc88b2b871da4983d721a210951814882df6fc708815c379490d5516d3476"
+    },
+    {
+      "path": "outputs/test_audit_log.json",
+      "bytes": 11710,
+      "sha256": "fc26fc2f13f15d28d5a5d54cc117ca7de64e1fa1bad675aa9dc18312a54f73f6"
+    },
+    {
+      "path": "outputs/test_blocked_article.json",
+      "bytes": 2753,
+      "sha256": "cb410581b57b99dbe324bb360877898995b51ef9458d10a5e76b1373abaf716a"
+    },
+    {
+      "path": "outputs/unit_results.xml",
+      "bytes": 2785,
+      "sha256": "052c723ef9d7a40df406b02d9215204b10f5c1a92e117ef3ddc712c75ea3981d"
+    },
+    {
+      "path": "outputs/video_manifest.json",
+      "bytes": 14103,
+      "sha256": "7ae5e0845ce0e801c5d66383f09dc5352ea76c37de9898b07b909685e3d5ec73"
+    },
+    {
+      "path": "outputs/프로젝트_실행결과보고서.docx",
+      "bytes": 45539,
+      "sha256": "ff195ba884a02e4c9041c6fa998a1622b443b9c5ebf2fc810ef62bca61e60ce8"
+    },
+    {
+      "path": "outputs/프로젝트_실행결과보고서.pdf",
+      "bytes": 339169,
+      "sha256": "d669a38c55614395a5f6e5e19e9c3ad51e171f530aaa6b927756b2ac04ae0d25"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7605,
+      "sha256": "36ca011a23136bc6fc1ab559168906fcb2977dae221b89f906469902593dde31"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 78,
+      "sha256": "e17679af85de2ef08e2f16978fe843b3a7ee5cad4458220a74d456585ed48278"
+    },
+    {
+      "path": "scripts/build_news_video.py",
+      "bytes": 29527,
+      "sha256": "26cfc9608e8d325babc951dcbfc10a253093d48fd22e3c364ff4ab332a52a99f"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 16960,
+      "sha256": "6bbca84ddb6d34f8bb38db4548c8b266eaff7677284e153d6ba5bfed377b5d59"
+    },
+    {
+      "path": "scripts/campaign_probe.py",
+      "bytes": 792,
+      "sha256": "157c0329133f024718cff73a80e2173978433a4db5a330d92c26b21dbb644f63"
+    },
+    {
+      "path": "scripts/collect_sources.py",
+      "bytes": 2267,
+      "sha256": "2da28182898f980f55669b1830e600814c6c8c4adf9673a470593e0ca1a01ab9"
+    },
+    {
+      "path": "scripts/download_official.py",
+      "bytes": 1203,
+      "sha256": "9c3470160c19486a089c96d2d847fcf5babedf4a0ee325cbd9abc8127ef22f1d"
+    },
+    {
+      "path": "scripts/encode_video.py",
+      "bytes": 2423,
+      "sha256": "34b384e1ada01e37836c01922f40a15c82f99ae25d9482f48ef1160837decf6b"
+    },
+    {
+      "path": "scripts/export_contracts.py",
+      "bytes": 678,
+      "sha256": "cdf0136391a3cfdc1d0a04f4e5d7a7507698fdd55bed8421eec8b2c41f5d07df"
+    },
+    {
+      "path": "scripts/init_users.py",
+      "bytes": 840,
+      "sha256": "76d085c0fce13839c82b004b8c2f142fd935842fd2998c98386abb85b912b480"
+    },
+    {
+      "path": "scripts/integration_test.py",
+      "bytes": 5286,
+      "sha256": "b8aefa8c1b49d0fccbd576c485ab1a770e03fa5db61e4c7aab13607abc45c08c"
+    },
+    {
+      "path": "scripts/make_fixtures.py",
+      "bytes": 777,
+      "sha256": "a5e608711dd9c326f645e98c9e60544074be73b2d8181adaab67ea11eaeb7142"
+    },
+    {
+      "path": "scripts/normalize_official.py",
+      "bytes": 4084,
+      "sha256": "d0e5da690e53829a9e49c7aedee0de8baf3154b69c4ce3e42e2c20397a1eb728"
+    },
+    {
+      "path": "scripts/package_submission.py",
+      "bytes": 1527,
+      "sha256": "9444b34f9a6fe428780dfbe4a0cfe0393a8de439e0412c61dacaaf11498d5933"
+    },
+    {
+      "path": "scripts/voice.ps1",
+      "bytes": 659,
+      "sha256": "8a3b58652f5489dcf0e153302b3e0b365d2dde27c841e989dcf60499e236b762"
+    },
+    {
+      "path": "start.ps1",
+      "bytes": 831,
+      "sha256": "31a2d732f7f760a790743beba63623bceb1bf1fa79742078bdf9adfe25aecc24"
+    },
+    {
+      "path": "tests/test_flow.py",
+      "bytes": 4527,
+      "sha256": "d8bac95638cf06e94cea2a6ec9d1a91cff14830dcc87a0d533ee89ae3d811c81"
+    }
+  ],
+  "repository": "https://github.com/mbc-incheon/Real-time-Election-News"
+}

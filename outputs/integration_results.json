@@ -1,0 +1,73 @@
+{
+  "at": "2026-11-24T10:38:16.079571+09:00",
+  "test_actors_only": true,
+  "checks": [
+    {
+      "name": "Cross-server receive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "WebSocket receives new snapshot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No token cannot generate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Normal validation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Writer cannot approve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Test editor approval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Export uses pinned snapshot",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision drops approval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Wrong region fails",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Failed article cannot be approved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Failed article cannot export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Upstream failure displayed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fallback remains demo",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "total": 13,
+  "passed": 13
+}

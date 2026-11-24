@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-24T01:37:57.595Z",
+  "method": "Node VM with DOM stubs; no rendered browser",
+  "total": 5,
+  "passed": 5,
+  "checks": [
+    {
+      "name": "New article requires explicit manual review",
+      "passed": true
+    },
+    {
+      "name": "Rule failure cannot enable approval",
+      "passed": true
+    },
+    {
+      "name": "Switching article clears confirmations",
+      "passed": true
+    },
+    {
+      "name": "Changing user token clears confirmations",
+      "passed": true
+    },
+    {
+      "name": "Unavailable values are never printed as zero or null",
+      "passed": true
+    }
+  ]
+}
