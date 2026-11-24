@@ -1,0 +1,9 @@
+# Preserve collected bytes and published SHA-256 across Windows/Linux checkouts.
+* -text whitespace=cr-at-eol
+data/** -whitespace
+*.docx binary
+*.pdf binary
+*.pptx binary
+*.png binary
+*.jpg binary
+*.mp4 binary
